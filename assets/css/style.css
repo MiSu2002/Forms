@@ -1,0 +1,29 @@
+.form-label {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+h1{
+    color: #252525;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 7em;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+h2{
+    color: #252525;
+    font-family: "Dancing Script", Sans-serif;
+    font-size: 3.9em;
+    font-weight: 900;
+}
+
+.btnn{
+    background-color: rgb(216, 216, 216);
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 40px;
+}
