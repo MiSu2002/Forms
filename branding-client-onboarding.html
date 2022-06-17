@@ -82,41 +82,12 @@
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">2</span>
                                 <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Structure</span>
-                                    <span class="bs-stepper-subtitle">Add Structural Info</span>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="line"></div>
-                        <div class="step" data-target="#social-links">
-                            <button type="button" class="step-trigger">
-                                <span class="bs-stepper-circle">3</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Products</span>
+                                    <span class="bs-stepper-title">Product</span>
                                     <span class="bs-stepper-subtitle">Add Product Details</span>
                                 </span>
                             </button>
                         </div>
-                        <div class="line"></div>
-                        <div class="step" data-target="#audience">
-                            <button type="button" class="step-trigger">
-                                <span class="bs-stepper-circle">4</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Audience</span>
-                                    <span class="bs-stepper-subtitle">Add Audience Details</span>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="line"></div>
-                        <div class="step" data-target="#visuals">
-                            <button type="button" class="step-trigger">
-                                <span class="bs-stepper-circle">5</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Visuals</span>
-                                    <span class="bs-stepper-subtitle">Add Visual Details</span>
-                                </span>
-                            </button>
-                        </div>
+                        
                     </div>
                     <div class="bs-stepper-content">
                         <form  onSubmit="return false">
@@ -167,121 +138,119 @@
                             <!-- Personal Info -->
                             <div id="personal-info" class="content">
                                 <div class="row g-3">
-                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                        <label class="form-label" for="company-name">What is the name of your company?</label>
-                                        <input type="text" id="company-name" class="form-control"/>
+                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="about">About the company (Description)</label>
+                                            <textarea class="form-control" id="about" rows="2"></textarea>
                                     </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                        <label class="form-label" for="industry-sector">What industry sector is it in?</label>
-                                        <input type="text" id="industry-sector" class="form-control" aria-label="email" />
+                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="value">Value of the company</label>
+                                            <textarea class="form-control" id="value" rows="2"></textarea>
                                     </div>
                                     <div class="col-12 mb-2">
                                         <div class="form-group">
-                                            <label class="form-label" for="story">Is there a story behind how your brand came about?</label>
-                                            <textarea class="form-control" id="story" rows="4"></textarea>
+                                            <label class="form-label" for="palettes">Industry type</label>
+                                                        <select class="select2" id="palettes">
+                                                            <option label=" "></option>
+                                                            <option selected>Advertising</option>
+                                                            <option>Agriculture Industry</option>
+                                                            <option>Communications Industry</option>
+                                                            <option>Construction Industry</option>
+                                                            <option>Creative Industries</option>
+                                                            <option>Education</option>
+                                                            <option>Entertainment Industry</option>
+                                                            <option>Farming</option>
+                                                            <option>Fashion</option>
+                                                            <option>Finance</option>
+                                                            <option>Food Industry</option>
+                                                            <option>Green Industry</option>
+                                                            <option>Health</option>
+                                                            <option>Heavy Industry</option>
+                                                            <option>Hospitality Industry</option>
+                                                            <option>Information Industry</option>
+                                                            <option>Information Technology</option>
+                                                            <option>Infrastructure</option>
+                                                            <option>IT Industry</option>
+                                                            <option>Light Industry</option>
+                                                            <option>Manfacturing</option>
+                                                            <option>Materials</option>
+                                                            <option>Media</option>
+                                                            <option>Music Industry</option>
+                                                            <option>Primary Industry</option>
+                                                            <option>Publishing</option>
+                                                            <option>Retail</option>
+                                                            <option>Robotics</option>
+                                                            <option>Secondary Industry</option>
+                                                            <option>Service Industry</option>
+                                                            <option>Space Industry</option>
+                                                            <option>Technology Industry</option>
+                                                            <option>Telecom</option>
+                                                            <option>Tertiary Sector</option>
+                                                            <option>Others</option>
+                                                        </select>
                                           </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="summarize">In few words, can you summarize the feel of your company?</label>
-                                            <textarea class="form-control" id="summarize" rows="4"></textarea>
+                                          </div>
+                                          <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="mission">Mission of the company</label>
+                                                <textarea class="form-control" id="mission" rows="2"></textarea>
                                         </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="vision">Vision of the company</label>
+                                                <textarea class="form-control" id="vision" rows="2"></textarea>
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label class="form-label" for="fonts">Fonts preferred</label>
+                                                <textarea class="form-control" id="fonts" rows="2"></textarea>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="fontss">Style</label>
+                                                        <select class="select2" id="fontss">
+                                                            <option label=" "></option>
+                                                            <option selected>Abstract Expressionism</option>
+                                                            <option>Art Deco</option>
+                                                            <option>Art Nouveau</option>
+                                                            <option>Avant-Grade</option>
+                                                            <option>Baroque</option>
+                                                            <option>Bauhaus</option>
+                                                            <option>Classicism</option>
+                                                            <option>Conceptual Art</option>
+                                                            <option>Constructism</option>
+                                                            <option>Cubism</option>
+                                                            <option>Dadaism</option>
+                                                            <option>Expressionism</option>
+                                                            <option>Fauvism</option>
+                                                            <option>Futurism</option>
+                                                            <option>Impressionism</option>
+                                                            <option>Minimalism</option>
+                                                            <option>Street Art</option>
+                                                            <option>Pop Art</option>
+                                                            <option>Neo-Classicism</option>
+                                                            <option>Symbolism</option>
+                                                            <option>Surrealism</option>
+                                                        </select>
+                                          </div>
+                                          <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="art">Colors preferred for Artwork/Logo/Packaging</label>
+                                                <input class="form-control" id="art"></input>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="special">Any special element to be incorporated</label>
+                                                <textarea class="form-control" id="special" rows="2"></textarea>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="concept">Concept (If any)</label>
+                                                <textarea class="form-control" id="concept" rows="2"></textarea>
                                         </div>
                                 </div>
                                 
-                                    <div class="d-flex col-12 justify-content-between">
-                                        <button class="btn btn-primary btn-prev">
-                                            <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
-                                            <span class="d-none d-sm-inline-block">Previous</span>
-                                        </button>
-                                        <button class="btn btn-primary btn-next">
-                                            <span class="d-none d-sm-inline-block">Next</span>
-                                            <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
-                                        </button>
-                                    </div>
+                                <div class="d-flex col-12 justify-content-between mt-3">
+                                    <button class="btn btn-primary btn-prev">
+                                        <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
+                                        <span class="d-none d-sm-inline-block">Previous</span>
+                                    </button>
+                                    <button class="btn btn-success btn-submit">Submit</button>
+                        </div>
+                    </div>
                                 </div>
-                            <!-- Social Links -->
-                            <div id="social-links" class="content">
-                                <div class="row g-3">
-                                    <div class="col-12 mb-2">
-                                        <div class="form-group">
-                                            <label class="form-label" for="services">How would you describe your company and the products and services you offer?</label>
-                                            <textarea class="form-control" id="services" rows="4"></textarea>
-                                          </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="features">What are the unique selling points and features of your products?</label>
-                                            <textarea class="form-control" id="features" rows="4"></textarea>
-                                        </div>
-                                        </div>
-                                </div>
-                                    <div class="d-flex col-12 justify-content-between">
-                                        <button class="btn btn-primary btn-prev">
-                                            <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
-                                            <span class="d-none d-sm-inline-block">Previous</span>
-                                        </button>
-                                        <button class="btn btn-primary btn-next">
-                                            <span class="d-none d-sm-inline-block">Next</span>
-                                            <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- Audience -->
-                            <div id="audience" class="content">
-                                <div class="row g-3">
-                                    <div class="col-12 mb-2">
-                                        <div class="form-group">
-                                            <label class="form-label" for="target">Who are you looking to target with your product?</label>
-                                            <textarea class="form-control" id="target" rows="4" placeholder="(Consider gender, age, location, income, etc.)"></textarea>
-                                          </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="plan">How do you plan to market your business?</label>
-                                            <textarea class="form-control" id="plan" rows="4"></textarea>
-                                        </div>
-                                        <label class="form-label" for="competitors">Who are your main competitors?</label>
-                                            <div class="input-group input-group-merge">
-                                                <input type="text" id="competitors" class="form-control" />
-                                            </div>
-                                        </div>
-                                </div>
-                                    <div class="d-flex col-12 justify-content-between">
-                                        <button class="btn btn-primary btn-prev">
-                                            <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
-                                            <span class="d-none d-sm-inline-block">Previous</span>
-                                        </button>
-                                        <button class="btn btn-primary btn-next">
-                                            <span class="d-none d-sm-inline-block">Next</span>
-                                            <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!--Visuals-->
-                                <div id="visuals" class="content">
-                                    <div class="row g-3">
-                                        <div class="col-12 mb-2">
-                                            <div class="form-group">
-                                        <label class="form-label" for="adjectives">What are some adjectives that describe how you’d like your design to make people feel?</label>
-                                            <div class="input-group input-group-merge">
-                                                <input type="text" id="adjectives" class="form-control" />
-                                            </div>
-                                            </div>
-                                            <div class="form-group">
-                                            <label class="form-label" for="target">Do you want to use existing brand colors or a particular range of colors, or are there any colors you don’t want to use?</label>
-                                            <textarea class="form-control" id="target" rows="4"></textarea>
-                                          </div>
-                                          <div class="form-group">
-                                            <label class="form-label" for="brands">Is there anything that must be included, such as existing brand elements, words or icons?</label>
-                                            <div class="input-group input-group-merge">
-                                                <input type="text" id="brands" class="form-control" />
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <div class="d-flex col-12 justify-content-between">
-                                                <button class="btn btn-primary btn-prev">
-                                                    <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
-                                                    <span class="d-none d-sm-inline-block">Previous</span>
-                                                </button>
-                                                <button class="btn btn-success btn-submit">Submit</button>
-                                    </div>
                                 </div>
                                 </div>
 
