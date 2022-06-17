@@ -31,3 +31,7 @@ h2{
     margin: 0;
     border: none;
 }
+
+.file{
+    border-radius: 5px;
+}
