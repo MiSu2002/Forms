@@ -62,13 +62,12 @@
                     <div class="text-center">
                         <img class="mt-4 mb-4" src="https://thegraphe.com/projects/wp-content/uploads/2020/10/wed-logo-com.jpg" width="150px" height="50px"/>
                     </div>
-                    <div class="bs-stepper-header">
+                    <div class="bs-stepper-header d-flex justify-content-center">
                         <div class="step" data-target="#account-details">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle one">1</span>
                                 <span class="bs-stepper-label">
                                     <span class="bs-stepper-title">Info</span>
-                                    <span class="bs-stepper-subtitle">Add Account Details</span>
                                 </span>
                             </button>
                         </div>
@@ -77,12 +76,29 @@
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">2</span>
                                 <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Product</span>
-                                    <span class="bs-stepper-subtitle">Add Product Details</span>
+                                    <span class="bs-stepper-title">Your Details</span>
                                 </span>
                             </button>
                         </div>
                         
+                        <div class="line"></div>
+                        <div class="step" data-target="#social-links">
+                            <button type="button" class="step-trigger">
+                                <span class="bs-stepper-circle">3</span>
+                                <span class="bs-stepper-label">
+                                    <span class="bs-stepper-title">Spouse's Details</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-target="#event">
+                            <button type="button" class="step-trigger">
+                                <span class="bs-stepper-circle">4</span>
+                                <span class="bs-stepper-label">
+                                    <span class="bs-stepper-title">Event</span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <div class="bs-stepper-content">
                         <form  onSubmit="return false">
@@ -133,118 +149,325 @@
                             <!-- Personal Info -->
                             <div id="personal-info" class="content">
                                 <div class="row g-3">
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                        <label class="form-label" for="about">About the company (Description)</label>
-                                            <textarea class="form-control" id="about" rows="2"></textarea>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                        <label class="form-label" for="value">Value of the company</label>
-                                            <textarea class="form-control" id="value" rows="2"></textarea>
-                                    </div>
+                                    
                                     <div class="col-12 mb-2">
                                         <div class="form-group">
-                                            <label class="form-label" for="palettes">Industry type</label>
+                                            <label class="form-label" for="palettes">You</label>
                                                         <select class="select2" id="palettes">
                                                             <option label=" "></option>
-                                                            <option selected>Advertising</option>
-                                                            <option>Agriculture Industry</option>
-                                                            <option>Communications Industry</option>
-                                                            <option>Construction Industry</option>
-                                                            <option>Creative Industries</option>
-                                                            <option>Education</option>
-                                                            <option>Entertainment Industry</option>
-                                                            <option>Farming</option>
-                                                            <option>Fashion</option>
-                                                            <option>Finance</option>
-                                                            <option>Food Industry</option>
-                                                            <option>Green Industry</option>
-                                                            <option>Health</option>
-                                                            <option>Heavy Industry</option>
-                                                            <option>Hospitality Industry</option>
-                                                            <option>Information Industry</option>
-                                                            <option>Information Technology</option>
-                                                            <option>Infrastructure</option>
-                                                            <option>IT Industry</option>
-                                                            <option>Light Industry</option>
-                                                            <option>Manfacturing</option>
-                                                            <option>Materials</option>
-                                                            <option>Media</option>
-                                                            <option>Music Industry</option>
-                                                            <option>Primary Industry</option>
-                                                            <option>Publishing</option>
-                                                            <option>Retail</option>
-                                                            <option>Robotics</option>
-                                                            <option>Secondary Industry</option>
-                                                            <option>Service Industry</option>
-                                                            <option>Space Industry</option>
-                                                            <option>Technology Industry</option>
-                                                            <option>Telecom</option>
-                                                            <option>Tertiary Sector</option>
-                                                            <option>Others</option>
+                                                            <option selected>--Select--</option>
+                                                            <option>Bride</option>
+                                                            <option>Groom</option>
                                                         </select>
                                           </div>
                                           </div>
                                           <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="mission">Mission of the company</label>
-                                                <textarea class="form-control" id="mission" rows="2"></textarea>
+                                            <label class="form-label" for="about">Full Name</label>
+                                                <input class="form-control" id="about"></input>
                                         </div>
-                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="vision">Vision of the company</label>
-                                                <textarea class="form-control" id="vision" rows="2"></textarea>
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label class="form-label" for="fonts">Fonts preferred</label>
-                                                <textarea class="form-control" id="fonts" rows="2"></textarea>
-                                        </div>
-                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="fontss">Style</label>
-                                                        <select class="select2" id="fontss">
-                                                            <option label=" "></option>
-                                                            <option selected>Abstract Expressionism</option>
-                                                            <option>Art Deco</option>
-                                                            <option>Art Nouveau</option>
-                                                            <option>Avant-Grade</option>
-                                                            <option>Baroque</option>
-                                                            <option>Bauhaus</option>
-                                                            <option>Classicism</option>
-                                                            <option>Conceptual Art</option>
-                                                            <option>Constructism</option>
-                                                            <option>Cubism</option>
-                                                            <option>Dadaism</option>
-                                                            <option>Expressionism</option>
-                                                            <option>Fauvism</option>
-                                                            <option>Futurism</option>
-                                                            <option>Impressionism</option>
-                                                            <option>Minimalism</option>
-                                                            <option>Street Art</option>
-                                                            <option>Pop Art</option>
-                                                            <option>Neo-Classicism</option>
-                                                            <option>Symbolism</option>
-                                                            <option>Surrealism</option>
-                                                        </select>
-                                          </div>
                                           <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="art">Colors preferred for Artwork/Logo/Packaging</label>
-                                                <input class="form-control" id="art"></input>
+                                            <label class="form-label" for="mission">Instagram ID</label>
+                                                <input class="form-control" id="mission" placeholder="https://instagram.com/instagram-id"></input>
                                         </div>
                                         <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="special">Any special element to be incorporated</label>
-                                                <textarea class="form-control" id="special" rows="2"></textarea>
+                                            <label class="form-label" for="vision">Full Name of Mother</label>
+                                                <input class="form-control" id="vision"></input>
                                         </div>
                                         <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="concept">Concept (If any)</label>
-                                                <textarea class="form-control" id="concept" rows="2"></textarea>
+                                            <label class="form-label" for="vision">Full Name of Father</label>
+                                                <input class="form-control" id="vision"></input>
                                         </div>
+                                        <div class="row form-group mt-3">
+                                            <div class="col-6">
+                                                    <div class="row">
+                                                        <label class="form-label" for="brands">Hi-Res photo (front profile; max size - 50MB)</label>
+                                                    </div>
+                                                    <div class="row-6">
+                                                        <button class="file">Choose File</button>No file chosen
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <label class="form-label" for="brands">Hi-Res photo (front profile; max size - 50MB)</label>
+                                                </div>
+                                                <div class="row-6">
+                                                    <button class="file">Choose File</button>No file chosen
+                                            </div>
+                                        </div>
+                                            </div>
+                                            <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                <label class="form-label" for="vision">Full Name of Grandmother</label>
+                                                    <input class="form-control" id="vision"></input>
+                                            </div>
+                                            <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                                <label class="form-label" for="vision">Full Name of Grandfather</label>
+                                                    <input class="form-control" id="vision"></input>
+                                            </div>
                                 </div>
                                 
                                 <div class="d-flex col-12 justify-content-between mt-3">
-                                    <button class="btn btn-primary btn-prev">
+                                    <button class="btn btn-label-secondary btn-prev" disabled>
                                         <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
                                         <span class="d-none d-sm-inline-block">Previous</span>
                                     </button>
-                                    <button class="btn btn-success btn-submit">Submit</button>
-                        </div>
+                                    <button class="btn bg-secondary text-light btn-next">
+                                        <span class="d-none d-sm-inline-block">Next</span>
+                                        <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
+                                    </button>
+                                </div>
                     </div>
+
+                    <div id="social-links" class="content">
+                        <div class="row g-3">
+                            
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" for="p2">Spouse</label>
+                                                <select class="select2" id="p2">
+                                                    <option label=" "></option>
+                                                    <option selected>--Select--</option>
+                                                    <option>Bride</option>
+                                                    <option>Groom</option>
+                                                </select>
+                                  </div>
+                                  </div>
+                                  <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="form-label" for="about">Full Name</label>
+                                        <input class="form-control" id="about"></input>
+                                </div>
+                                  <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="form-label" for="mission">Instagram ID</label>
+                                        <input class="form-control" id="mission" placeholder="https://instagram.com/instagram-id"></input>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="form-label" for="vision">Full Name of Mother</label>
+                                        <input class="form-control" id="vision"></input>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label class="form-label" for="vision">Full Name of Father</label>
+                                        <input class="form-control" id="vision"></input>
+                                </div>
+                                <div class="row form-group mt-3">
+                                    <div class="col-6">
+                                            <div class="row">
+                                                <label class="form-label" for="brands">Hi-Res photo (front profile; max size - 50MB)</label>
+                                            </div>
+                                            <div class="row-6">
+                                                <button class="file">Choose File</button>No file chosen
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <label class="form-label" for="brands">Hi-Res photo (front profile; max size - 50MB)</label>
+                                        </div>
+                                        <div class="row-6">
+                                            <button class="file">Choose File</button>No file chosen
+                                    </div>
+                                </div>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="vision">Full Name of Grandmother</label>
+                                            <input class="form-control" id="vision"></input>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="vision">Full Name of Grandfather</label>
+                                            <input class="form-control" id="vision"></input>
+                                    </div>
+                        </div>
+                        
+                        <div class="d-flex col-12 justify-content-between mt-3">
+                            <button class="btn btn-label-secondary btn-prev" disabled>
+                                <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
+                                <span class="d-none d-sm-inline-block">Previous</span>
+                            </button>
+                            <button class="btn bg-secondary text-light btn-next">
+                                <span class="d-none d-sm-inline-block">Next</span>
+                                <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
+                            </button>
+                        </div>
+            </div>
+            <div id="event" class="content">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h6 class="mt-5">Event 1</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 2</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 3</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 4</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 5</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 6</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <h6 class="mt-5">Event 7</h6>
+                        <hr class="mt-0">
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="event-name">Event Name</label>
+                        <input type="text" id="event-name" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="date">Date</label>
+                        <input type="text" id="date" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="time">Time</label>
+                        <input type="text" id="time" class="form-control"/>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <label class="form-label" for="venue">Venue</label>
+                        <input type="text" id="venue" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="2"></textarea>
+                      </div>
+                      </div>
+                      <div class="d-flex col-12 justify-content-between mt-3">
+                        <button class="btn btn-primary btn-prev">
+                            <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
+                            <span class="d-none d-sm-inline-block">Previous</span>
+                        </button>
+                        <button class="btn btn-success btn-submit">Submit</button>
+                    </div>
+                </div>
+                
+            </div>
+            
                                 </div>
                                 </div>
                                 </div>
