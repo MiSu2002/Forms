@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
+    data-assets-path="assets/" data-template="vertical-menu-template">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Wizard Numbered - Forms | Frest - Bootstrap Admin Template</title>
+
+    <meta name="description" content="" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script&family=Playfair+Display:wght@400;800&family=Poppins&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bs-stepper/bs-stepper.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+</head>
+
+<body>
+    
+    <div class="container-fluid flex-grow-1 container-p-y">
+        <div class="row">
+
+            <!-- Default Wizard -->
+            <div class="col-12 mb-4">
+                
+                <div class="bs-stepper wizard-numbered mt-2">
+                    <div class="text-center">
+                        <img class="mt-4 mb-4" src="https://thegraphe.com/projects/wp-content/uploads/2020/07/download-1536x442.png" width="150px" height="50px"/>
+                    </div>
+                    <div class="container-fluid mt-3 mb-5">
+                            <div class="container-fluid d-flex justify-content-center">
+                               <img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/60e2f4018cb0c9f7e78f3fc7_Startup-tech-grid_1.gif" width="200px" height="200px"/>
+                            </div>
+                    </div>
+                    <div class="bs-stepper-header">
+                        <div class="step" data-target="#account-details">
+                            <button type="button" class="step-trigger">
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="bs-stepper-content">
+                        <form  onSubmit="return false">
+                            
+                            <!-- Account Details -->
+                            <div id="account-details" class="content">
+                                <div class="row g-3">
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="phone">Phone</label>
+                                        <input type="text" id="phone" class="form-control"/>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" aria-label="email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label" for="address">Billing Address</label>
+                                            <textarea class="form-control" id="address" rows="2"></textarea>
+                                          </div>
+                                          </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="name">Billing Name</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type="text" id="name" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="gstin">GSTIN</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type="text" id="gstin" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="about">Remarks (If any)</label>
+                                                <textarea class="form-control" id="about" rows="2"></textarea>
+                                        </div>
+
+                                <div class="d-flex col-12 justify-content-between">
+                                    <button class="btn btn-label-secondary btn-prev" disabled>
+                                        <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
+                                        <span class="d-none d-sm-inline-block">Previous</span>
+                                    </button>
+                                    <button class="btn btn-success btn-submit">Submit</button>
+                                </div>
+                                </div>
+                                </div>
+
+                                </div>
+                                </div>
+                                </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /Default Wizard -->
+
+        </div>
+
+    </div>
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
+    <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <script>
+        /**
+ *  Form Wizard
+ */
+
+        'use strict';
+
+        $(function () {
+            const select2 = $('.select2'),
+                selectPicker = $('.selectpicker');
+
+            // Bootstrap select
+            if (selectPicker.length) {
+                selectPicker.selectpicker();
+            }
+
+            // select2
+            if (select2.length) {
+                select2.each(function () {
+                    var $this = $(this);
+                    $this.wrap('<div class="position-relative"></div>');
+                    $this.select2({
+                        placeholder: 'Select value',
+                        dropdownParent: $this.parent()
+                    });
+                });
+            }
+        });
+        (function () {
+            // Numbered Wizard
+            // --------------------------------------------------------------------
+            const wizardNumbered = document.querySelector('.wizard-numbered'),
+                wizardNumberedBtnNextList = [].slice.call(wizardNumbered.querySelectorAll('.btn-next')),
+                wizardNumberedBtnPrevList = [].slice.call(wizardNumbered.querySelectorAll('.btn-prev')),
+                wizardNumberedBtnSubmit = wizardNumbered.querySelector('.btn-submit');
+
+            if (typeof wizardNumbered !== undefined && wizardNumbered !== null) {
+                const numberedStepper = new Stepper(wizardNumbered, {
+                    linear: false
+                });
+                if (wizardNumberedBtnNextList) {
+                    wizardNumberedBtnNextList.forEach(wizardNumberedBtnNext => {
+                        wizardNumberedBtnNext.addEventListener('click', event => {
+                            numberedStepper.next();
+                        });
+                    });
+                }
+                if (wizardNumberedBtnPrevList) {
+                    wizardNumberedBtnPrevList.forEach(wizardNumberedBtnPrev => {
+                        wizardNumberedBtnPrev.addEventListener('click', event => {
+                            numberedStepper.previous();
+                        });
+                    });
+                }
+                if (wizardNumberedBtnSubmit) {
+                    wizardNumberedBtnSubmit.addEventListener('click', event => {
+                        alert('Submitted..!!');
+                    });
+                }
+            }
+
+            // Vertical Wizard
+            // --------------------------------------------------------------------
+            const wizardVertical = document.querySelector('.wizard-vertical'),
+                wizardVerticalBtnNextList = [].slice.call(wizardVertical.querySelectorAll('.btn-next')),
+                wizardVerticalBtnPrevList = [].slice.call(wizardVertical.querySelectorAll('.btn-prev')),
+                wizardVerticalBtnSubmit = wizardVertical.querySelector('.btn-submit');
+
+            if (typeof wizardVertical !== undefined && wizardVertical !== null) {
+                const verticalStepper = new Stepper(wizardVertical, {
+                    linear: false
+                });
+                if (wizardVerticalBtnNextList) {
+                    wizardVerticalBtnNextList.forEach(wizardVerticalBtnNext => {
+                        wizardVerticalBtnNext.addEventListener('click', event => {
+                            verticalStepper.next();
+                        });
+                    });
+                }
+                if (wizardVerticalBtnPrevList) {
+                    wizardVerticalBtnPrevList.forEach(wizardVerticalBtnPrev => {
+                        wizardVerticalBtnPrev.addEventListener('click', event => {
+                            verticalStepper.previous();
+                        });
+                    });
+                }
+
+                if (wizardVerticalBtnSubmit) {
+                    wizardVerticalBtnSubmit.addEventListener('click', event => {
+                        alert('Submitted..!!');
+                    });
+                }
+            }
+
+            // Modern Wizard
+            // --------------------------------------------------------------------
+            const wizardModern = document.querySelector('.wizard-modern-example'),
+                wizardModernBtnNextList = [].slice.call(wizardModern.querySelectorAll('.btn-next')),
+                wizardModernBtnPrevList = [].slice.call(wizardModern.querySelectorAll('.btn-prev')),
+                wizardModernBtnSubmit = wizardModern.querySelector('.btn-submit');
+            if (typeof wizardModern !== undefined && wizardModern !== null) {
+                const modernStepper = new Stepper(wizardModern, {
+                    linear: false
+                });
+                if (wizardModernBtnNextList) {
+                    wizardModernBtnNextList.forEach(wizardModernBtnNext => {
+                        wizardModernBtnNext.addEventListener('click', event => {
+                            modernStepper.next();
+                        });
+                    });
+                }
+                if (wizardModernBtnPrevList) {
+                    wizardModernBtnPrevList.forEach(wizardModernBtnPrev => {
+                        wizardModernBtnPrev.addEventListener('click', event => {
+                            modernStepper.previous();
+                        });
+                    });
+                }
+                if (wizardModernBtnSubmit) {
+                    wizardModernBtnSubmit.addEventListener('click', event => {
+                        alert('Submitted..!!');
+                    });
+                }
+            }
+
+            // Modern Vertical Wizard
+            // --------------------------------------------------------------------
+            const wizardModernVertical = document.querySelector('.wizard-modern-vertical'),
+                wizardModernVerticalBtnNextList = [].slice.call(wizardModernVertical.querySelectorAll('.btn-next')),
+                wizardModernVerticalBtnPrevList = [].slice.call(wizardModernVertical.querySelectorAll('.btn-prev')),
+                wizardModernVerticalBtnSubmit = wizardModernVertical.querySelector('.btn-submit');
+            if (typeof wizardModernVertical !== undefined && wizardModernVertical !== null) {
+                const modernVerticalStepper = new Stepper(wizardModernVertical, {
+                    linear: false
+                });
+                if (wizardModernVerticalBtnNextList) {
+                    wizardModernVerticalBtnNextList.forEach(wizardModernVerticalBtnNext => {
+                        wizardModernVerticalBtnNext.addEventListener('click', event => {
+                            modernVerticalStepper.next();
+                        });
+                    });
+                }
+                if (wizardModernVerticalBtnPrevList) {
+                    wizardModernVerticalBtnPrevList.forEach(wizardModernVerticalBtnPrev => {
+                        wizardModernVerticalBtnPrev.addEventListener('click', event => {
+                            modernVerticalStepper.previous();
+                        });
+                    });
+                }
+                if (wizardModernVerticalBtnSubmit) {
+                    wizardModernVerticalBtnSubmit.addEventListener('click', event => {
+                        alert('Submitted..!!');
+                    });
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
