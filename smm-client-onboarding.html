@@ -71,54 +71,34 @@
                         <img class="mt-4 mb-4" src="https://thegraphe.com/projects/wp-content/uploads/2020/07/download-1536x442.png" width="150px" height="50px"/>
                     </div>
                     
-                    <div class="bs-stepper-header">
+                    <div class="bs-stepper-header d-flex justify-content-center">
                         <div class="step" data-target="#account-details">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle one">1</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Info</span>
-                                    <span class="bs-stepper-subtitle">Add Account Details</span>
-                                </span>
                             </button>
                         </div>
                         <div class="line"></div>
                         <div class="step" data-target="#personal-info">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">2</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title t1">Structure</span>
-                                    <span class="bs-stepper-subtitle">Add Structural Info</span>
-                                </span>
                             </button>
                         </div>
                         <div class="line"></div>
                         <div class="step" data-target="#social-links">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">3</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Products</span>
-                                    <span class="bs-stepper-subtitle">Add Product Details</span>
-                                </span>
                             </button>
                         </div>
                         <div class="line"></div>
                         <div class="step" data-target="#audience">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">4</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Audience</span>
-                                    <span class="bs-stepper-subtitle">Add Audience Details</span>
-                                </span>
                             </button>
                         </div>
                         <div class="line"></div>
                         <div class="step" data-target="#visuals">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-circle">5</span>
-                                <span class="bs-stepper-label">
-                                    <span class="bs-stepper-title">Visuals</span>
-                                    <span class="bs-stepper-subtitle">Add Visual Details</span>
-                                </span>
                             </button>
                         </div>
                     </div>
@@ -127,6 +107,10 @@
                             
                             <!-- Account Details -->
                             <div id="account-details" class="content">
+                                <div class="content-header mb-3">
+                                    <h6 class="mb-0">Info</h6>
+                                    <small>Enter Your Account Details.</small>
+                                </div>
                                 <div class="row g-3">
                                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                         <label class="form-label" for="phone">Phone</label>
@@ -136,19 +120,20 @@
                                         <label class="form-label" for="email">Email</label>
                                         <input type="email" id="email" class="form-control" aria-label="email" />
                                     </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Billing Name</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="text" id="name" class="form-control"/>
+                                        </div>
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label class="form-label" for="address">Billing Address</label>
                                             <textarea class="form-control" id="address" rows="2"></textarea>
                                           </div>
                                           </div>
-                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                            <label class="form-label" for="name">Billing Name</label>
-                                            <div class="input-group input-group-merge">
-                                                <input type="text" id="name" class="form-control"/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                                        <div class="form-group">
                                             <label class="form-label" for="gstin">GSTIN</label>
                                             <div class="input-group input-group-merge">
                                                 <input type="text" id="gstin" class="form-control" />
@@ -170,6 +155,10 @@
 
                             <!-- Personal Info -->
                             <div id="personal-info" class="content">
+                                <div class="content-header mb-3">
+                                    <h6 class="mb-0">Structure</h6>
+                                    <small>Enter The Structural Details.</small>
+                                </div>
                                 <div class="row g-3">
                                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                         <label class="form-label" for="company-name">What is the name of your company?</label>
@@ -184,14 +173,13 @@
                                             <label class="form-label" for="story">Is there a story behind how your brand came about?</label>
                                             <textarea class="form-control" id="story" rows="4"></textarea>
                                           </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="summarize">In few words, can you summarize the feel of your company?</label>
-                                            <textarea class="form-control" id="summarize" rows="4"></textarea>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label" for="summarize">Company Logo</label>
+                                            <input type="file" class="form-control"/>
                                         </div>
                                         </div>
-                                </div>
                                 
-                                    <div class="d-flex col-12 justify-content-between">
+                                    <div class="d-flex col-12 justify-content-between mt-3">
                                         <button class="btn btn-primary btn-prev">
                                             <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
                                             <span class="d-none d-sm-inline-block">Previous</span>
@@ -201,9 +189,14 @@
                                             <i class="bx bx-chevron-right bx-sm me-sm-n2"></i>
                                         </button>
                                     </div>
+                                    </div>
                                 </div>
                             <!-- Social Links -->
                             <div id="social-links" class="content">
+                                <div class="content-header mb-3">
+                                    <h6 class="mb-0">Products</h6>
+                                    <small>Enter Your Product Details.</small>
+                                </div>
                                 <div class="row g-3">
                                     <div class="col-12 mb-2">
                                         <div class="form-group">
@@ -211,12 +204,29 @@
                                             <textarea class="form-control" id="services" rows="4"></textarea>
                                           </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="features">What are the unique selling points and features of your products?</label>
+                                            <label class="form-label" for="features">What is your USP?</label>
                                             <textarea class="form-control" id="features" rows="4"></textarea>
                                         </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="feature">Your Value Proposition</label>
+                                            <textarea class="form-control" id="feature" rows="2"></textarea>
                                         </div>
-                                </div>
-                                    <div class="d-flex col-12 justify-content-between">
+                                        
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="phon">What would be the ideal positioning of your brand?</label>
+                                            <input type="text" id="phon" class="form-control"/>
+                                        </div>
+                                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                            <label class="form-label" for="sell">What is your mode of selling?</label>
+                                            <select class="select2" id="p2">
+                                                <option label=" "></option>
+                                                <option selected>Online</option>
+                                                <option>Store</option>
+                                                <option>Both</option>
+                                            </select>
+                                        </div>
+                                    <div class="d-flex col-12 justify-content-between mt-3">
                                         <button class="btn btn-primary btn-prev">
                                             <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
                                             <span class="d-none d-sm-inline-block">Previous</span>
@@ -227,9 +237,14 @@
                                         </button>
                                     </div>
                                 </div>
+                                </div>
 
                                 <!-- Audience -->
                             <div id="audience" class="content">
+                                <div class="content-header mb-3">
+                                    <h6 class="mb-0">Audience</h6>
+                                    <small>Enter Your Audience Details.</small>
+                                </div>
                                 <div class="row g-3">
                                     <div class="col-12 mb-2">
                                         <div class="form-group">
@@ -237,16 +252,24 @@
                                             <textarea class="form-control" id="target" rows="4" placeholder="(Consider gender, age, location, income, etc.)"></textarea>
                                           </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="plan">How do you plan to market your business?</label>
+                                            <label class="form-label" for="plan">Are you solving any specific problem of your audience? If yes, which?</label>
                                             <textarea class="form-control" id="plan" rows="4"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="pln">How do you plan to market your business?</label>
+                                            <textarea class="form-control" id="pln" rows="4"></textarea>
                                         </div>
                                         <label class="form-label" for="competitors">Who are your main competitors?</label>
                                             <div class="input-group input-group-merge">
                                                 <input type="text" id="competitors" class="form-control" />
                                             </div>
                                         </div>
-                                </div>
-                                    <div class="d-flex col-12 justify-content-between">
+                                        <label class="form-label" for="competitor">Any role models?</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type="text" id="competitor" class="form-control" />
+                                            </div>
+                                        </div>
+                                    <div class="d-flex col-12 justify-content-between mt-3">
                                         <button class="btn btn-primary btn-prev">
                                             <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
                                             <span class="d-none d-sm-inline-block">Previous</span>
@@ -260,26 +283,30 @@
 
                                 <!--Visuals-->
                                 <div id="visuals" class="content">
+                                    <div class="content-header mb-3">
+                                        <h6 class="mb-0">POC</h6>
+                                        <small>Enter Your POC Details.</small>
+                                    </div>
                                     <div class="row g-3">
                                         <div class="col-12 mb-2">
                                             <div class="form-group">
-                                        <label class="form-label" for="adjectives">What are some adjectives that describe how you’d like your design to make people feel?</label>
+                                        <label class="form-label" for="adjectives">Point of contact</label>
                                             <div class="input-group input-group-merge">
                                                 <input type="text" id="adjectives" class="form-control" />
                                             </div>
                                             </div>
                                             <div class="form-group">
-                                            <label class="form-label" for="target">Do you want to use existing brand colors or a particular range of colors, or are there any colors you don’t want to use?</label>
-                                            <textarea class="form-control" id="target" rows="4"></textarea>
+                                            <label class="form-label" for="target">Email</label>
+                                            <input type="email" class="form-control" id="target" rows="4"/>
                                           </div>
                                           <div class="form-group">
-                                            <label class="form-label" for="brands">Is there anything that must be included, such as existing brand elements, words or icons?</label>
+                                            <label class="form-label" for="brands">WhatsApp</label>
                                             <div class="input-group input-group-merge">
                                                 <input type="text" id="brands" class="form-control" />
                                             </div>
                                             </div>
                                             </div>
-                                            <div class="d-flex col-12 justify-content-between">
+                                            <div class="d-flex col-12 justify-content-between mt-3">
                                                 <button class="btn btn-primary btn-prev">
                                                     <i class="bx bx-chevron-left bx-sm ms-sm-n2"></i>
                                                     <span class="d-none d-sm-inline-block">Previous</span>
