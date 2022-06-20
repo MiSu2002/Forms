@@ -51,3 +51,19 @@ h2{
 .fa-twitter{
     font-size: 24px;
 }
+
+.one::after{
+    height: 0 !important;
+}
+.two::after{
+    height: 0 !important;
+}
+.three::after{
+    height: 0 !important;
+}
+.four::after{
+    height: 0 !important;
+}
+.five::after{
+    height: 0 !important;
+}
